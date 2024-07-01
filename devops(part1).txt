@@ -1,0 +1,87 @@
+1.create a project in local repository
+cd desktop
+cd devops
+git clone resository link
+cd repo name
+git init
+git config --global user.name "AnuC-M"
+git config --global user.email "vvce21aiml0066@gmail.com"
+git config --list
+nano anu.txt
+git add anu.txt
+git commit -m "commiting"
+git push 
+git status
+git log
+git pull
+
+
+2. create a project in remote repository apply fork
+cd desktop
+cd devops
+open a repository in GitHub ->fork -> create fork after clicking on fork -> after creating click on green color code there their will be repo link copy that link
+git clone paste that here
+cd repo name findprime number
+git init
+git config --global user.name "AnuC-M"
+git config --global user.email "vvce21aiml0066@gmail.com"
+git branch
+git branch l1
+nano anu.txt
+git add anu.txt
+git commit -m "commiting"
+git checkout l1
+nano anu.txt
+git add anu.txt
+git commit -m "commiting"
+git push
+git checkout -b branch1
+git merge l1
+
+
+3 gnekins 
+install jdk 
+open browse go to oracle
+click download jdk for windows 64bit
+
+install Jenkins
+go to download and deploy of Jenkins
+under lts click on windows 
+unzip the downloaded Jenkins file ,click on the folder install it
+select finish once done
+
+run Jenkins on Localhost:8080
+enter the credentials and login
+
+in git hub create a python code
+
+select new project give name choose free style click ok
+click on newly created project and move configuration
+provide branch name where project is located
+under the build triggers select poll SCM? give schedule * * * * *
+under the build triggers tab
+click on the "execute windows batch command"
+apply and save 
+click on build now
+
+
+4.docker image
+
+install  docker desktop on windows 
+open docker let it run in background 
+create a folder goto that folder on vs studio
+create a python file
+	print('hi') &save it as aa.py
+create one more file as dockerfile
+	FROM python
+	WORKDIR /aa
+	COPY . /aa
+	CMD ["python",aa.py"]
+
+open terminal in vs code
+docker build -t progm4
+docker login -u mail id<anucmanu5@gmail.com>
+password Dockerhub@123
+docker images 
+docker tag image id dockerhub accname<anucm19>/imagename:v1
+docker push docker.io/dockerhubacccname/imagename:v1
